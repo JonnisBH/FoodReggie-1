@@ -1,0 +1,26 @@
+@model IEnumerable<FoodReggie_1.Models.Item>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>@ViewBag.CurrentViewName</h1>
+    <table>
+        <tr>
+            <th>ItemId</th><th>Name</th><th>Price</th><th>Description</th>
+        </tr>
+    @foreach (var item in Model){
+        <tr>
+            <td>@item.ItemId</td>
+            <td>@item.Name</td>
+            <td>@item.Price.ToString("0.00 NOK")</td>
+        </tr>
+    }
+    </table>
+</body>
+</html>
+
