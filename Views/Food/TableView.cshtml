@@ -1,4 +1,4 @@
-@model IEnumerable<FoodReggie_1.Models.Item>
+@model IEnumerable<FoodReggie_1.Models.Food>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +13,11 @@
         <tr>
             <th>ItemId</th><th>Name</th><th>Price</th><th>Description</th>
         </tr>
-    @foreach (var item in Model){
+    @foreach (var food in Model){
         <tr>
-            <td>@item.ItemId</td>
-            <td>@item.Name</td>
-            <td>@item.Price.ToString("0.00 NOK")</td>
+            <td>@food.FoodId</td>
+            <td>@food.Name</td>
+            <td>@food.Price.ToString("0.00 NOK")</td>
         </tr>
     }
     </table>

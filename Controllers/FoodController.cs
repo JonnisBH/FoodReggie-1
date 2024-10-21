@@ -4,22 +4,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FoodReggie_1.Controllers;
 
-public class ItemController : Controller{
+public class FoodController : Controller{
     public IActionResult Table(){
-        var items = new List<Item>();
-        var item1 = new Item{
-            ItemId = 1,
+        var foods = new List<Food>();
+        var food1 = new Food{
+            FoodId = 1,
             Name = "Kebab",
             Price = 69
         };
-        var item2 = new Item{
-            ItemId = 2,
+        var food2 = new Food{
+            FoodId = 2,
             Name = "Hamburger",
             Price = 89
         };
-        items.Add(item1);
-        items.Add(item2);
+        foods.Add(food1);
+        foods.Add(food2);
         ViewBag.CurrentViewName = "Food menu";
-        return View(items);
+        return View(foods);
     }
 }
