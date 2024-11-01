@@ -1,9 +1,9 @@
-@model IEnumerable<Food>
+@model FoodViewModel
 
 <h1>Food menu (@ViewBag.CurrentViewName View)</h1>
 <a href="/Food/Table">Table View</a>
 
-@foreach (var food in Model){
+@foreach (var food in Model.Foods){
     <div>
         <img src="@food.ImageURL" alt="@food.Name">
         <div>

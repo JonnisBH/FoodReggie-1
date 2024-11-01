@@ -1,5 +1,6 @@
 using System;
 using FoodReggie_1.Models;
+using FoodReggie_1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodReggie_1.Controllers;
@@ -7,14 +8,14 @@ namespace FoodReggie_1.Controllers;
 public class FoodController : Controller{
     public IActionResult Table(){
         var foods = GetFoods();
-        ViewBag.CurrentViewName = "Table";
-        return View(foods);
+        var foodViewModel = new FoodViewModel(foods, "Table");
+        return View(foodViewModel);
     }
 
     public IActionResult Grid(){
         var foods = GetFoods();
-        ViewBag.CurrentViewName = "Grid";
-        return View(foods);
+        var foodViewModel = new FoodViewModel(foods, "Grid");
+        return View(foodViewModel);
     }
 
     public List<Food> GetFoods(){

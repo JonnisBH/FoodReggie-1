@@ -1,4 +1,4 @@
-@model IEnumerable<FoodReggie_1.Models.Food>
+@model FoodViewModel
 
 <a href="/Food/Grid">Grid View</a>
 
@@ -8,11 +8,12 @@
         <tr>
             <th>ItemId</th><th>Name</th><th>Price</th><th>Description</th>
         </tr>
-    @foreach (var food in Model){
+    @foreach (var food in Model.Foods){
         <tr>
             <td>@food.FoodId</td>
             <td>@food.Name</td>
             <td>@food.Price.ToString("0.00 NOK")</td>
+            <td>@food.Description</td>
         </tr>
     }
     </table>
