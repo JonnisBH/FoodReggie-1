@@ -6,14 +6,18 @@
     <h1>@ViewBag.CurrentViewName</h1>
     <table>
         <tr>
-            <th>ItemId</th><th>Name</th><th>Price</th><th>Description</th>
+            <th>ItemId</th><th>Name</th><th>Nutrition values per 100 gram</th>
         </tr>
     @foreach (var food in Model.Foods){
         <tr>
             <td>@food.FoodId</td>
             <td>@food.Name</td>
-            <td>@food.Price.ToString("0.00 NOK")</td>
-            <td>@food.Description</td>
+            <td>
+                @food.Calories.ToString("0 kcal")
+                @food.Protein.ToString("0.0 g")
+                @food.Carbohydrates.ToString("0.0 g")
+                @food.Fats.ToString("0.0 g")    
+            </td>
         </tr>
     }
     </table>
