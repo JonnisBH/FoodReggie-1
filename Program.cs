@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using FoodReggie_1.Models;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<FoodDbContext>(Options => {
+    Options.UseSqlite(
+        builder.Configuration["ConnectionStrings:FoodDbContextConnection"]);
+});
 
 var app = builder.Build();
 
