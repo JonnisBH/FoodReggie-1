@@ -2,6 +2,7 @@ using System;
 using FoodReggie_1.Models;
 using FoodReggie_1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.Json;
 
 namespace FoodReggie_1.Controllers;
@@ -12,14 +13,14 @@ public class FoodController : Controller{
     public FoodController(FoodDbContext foodDbContext){
         _foodDbContext = foodDbContext;
     }
-    public IActionResult Table(){
-        List<Food> foods = _foodDbContext.Foods.ToList();
+    public async Task<IActionResult> Table(){
+        List<Food> foods = await _foodDbContext.Foods.ToListAsync();
         var foodViewModel = new FoodViewModel(foods, "Table");
         return View(foodViewModel);
     }
 
-    public IActionResult Grid(){
-        List<Food> foods = _foodDbContext.Foods.ToList();
+    public async Task<IActionResult> Grid(){
+        List<Food> foods = await _foodDbContext.Foods.ToListAsync();
         var foodViewModel = new FoodViewModel(foods, "Grid");
         return View(foodViewModel);
     }
@@ -30,18 +31,18 @@ public class FoodController : Controller{
     }
 
     [HttpPost]
-    public IActionResult Create(Food food){
+    public async Task<IActionResult> Create(Food food){
         if(ModelState.IsValid){
             _foodDbContext.Foods.Add(food);
-            _foodDbContext.SaveChanges();
+            await _foodDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Table));
         }
         return View(food);
     }
 
     [HttpGet]
-    public IActionResult Update(int id){
-        var food = _foodDbContext.Foods.Find(id);
+    public async Task<IActionResult> Update(int id){
+        var food = await _foodDbContext.Foods.FindAsync(id);
         if (food == null){
             return NotFound();
         }
@@ -49,18 +50,18 @@ public class FoodController : Controller{
     }
 
     [HttpPost]
-    public IActionResult Update(Food food){
+    public async Task<IActionResult> Update(Food food){
         if (ModelState.IsValid){
             _foodDbContext.Foods.Update(food);
-            _foodDbContext.SaveChanges();
+           await _foodDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Table));
         }
         return View(food);
     }
 
     [HttpGet]
-    public IActionResult Delete(int id){
-        var food = _foodDbContext.Foods.Find(id);
+    public async Task<IActionResult> Delete(int id){
+        var food = await _foodDbContext.Foods.FindAsync(id);
         if(food == null){
             return NotFound();
         }
@@ -68,13 +69,13 @@ public class FoodController : Controller{
     }
 
     [HttpPost]
-    public IActionResult ConfirmDelete(int id){
-        var food = _foodDbContext.Foods.Find(id);
+    public async Task<IActionResult> ConfirmDelete(int id){
+        var food = await _foodDbContext.Foods.FindAsync(id);
         if(food == null){
             return NotFound();
         }
         _foodDbContext.Foods.Remove(food);
-        _foodDbContext.SaveChanges();
+        await _foodDbContext.SaveChangesAsync();
         return RedirectToAction(nameof(Table));
     }
 }
