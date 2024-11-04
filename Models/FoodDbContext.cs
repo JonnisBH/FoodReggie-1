@@ -12,4 +12,8 @@ public class FoodDbContext : DbContext{
     public DbSet<User> Users { get; set; }
     public DbSet<Registration> Registrations { get; set; }
     public DbSet<RegistratedFood> RegistratedFoods { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
+        optionsBuilder.UseLazyLoadingProxies();
+    }
 }
