@@ -1,0 +1,32 @@
+@model Food
+
+<h1>Delete Food Item</h1>
+
+<h2>Are you sure you want to delete this food item?</h2>
+<div>
+    <dt>Food Id</dt>
+    <dd>@Model.FoodId</dd>
+
+    <dt>Food Group</dt>
+    <dd>@Model.FoodGroup</dd>
+
+    <dt>Calories</dt>
+    <dd>@Model.Calories</dd>
+
+    <dt>Protein</dt>
+    <dd>@Model.Protein</dd>
+
+    <dt>Carbohydrates</dt>
+    <dd>@Model.Carbohydrates</dd>
+
+    <dt>Fats</dt>
+    <dd>@Model.Fats</dd>
+
+    <dt>Image URL</dt>
+    <dd>@Model.ImageURL</dd>
+    
+    <form asp-action="ConfirmDelete" asp-route-id="@Model.FoodId" method="post">
+        <button type="submit">Delete</button>
+        <a asp-action="Table">Cancel</a>
+    </form>
+</div>
