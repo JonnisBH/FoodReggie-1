@@ -10,6 +10,6 @@ namespace FoodReggie_1.Models
         public double Carbohydrates { get; set; }
         public double Fats { get; set; }
         public string? ImageURL { get; set; }
-        public List<RegistratedFood>? FoodItems { get; set; }
+        public virtual List<RegistratedFood>? RegistratedFoods { get; set; }
     }
 }
