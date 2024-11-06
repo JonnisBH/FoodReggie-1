@@ -1,7 +1,8 @@
+using FoodReggie_1.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace FoodReggie_1.Models;
+namespace FoodReggie_1.DAL;
 
 public class FoodDbContext : DbContext{
     public FoodDbContext(DbContextOptions<FoodDbContext> options) : base(options){

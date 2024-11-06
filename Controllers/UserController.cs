@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using FoodReggie_1.Models;
+using FoodReggie_1.DAL;
 using Microsoft.EntityFrameworkCore;
 
 namespace FoodReggie_1.Controllers;

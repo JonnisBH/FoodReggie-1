@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
+using FoodReggie_1.Models;
 
-namespace FoodReggie_1.Models;
+namespace FoodReggie_1.DAL;
 
 public static class DBInit{
     public static void Seed(IApplicationBuilder app){
         using var serviceScope = app.ApplicationServices.CreateScope();
         FoodDbContext context = serviceScope.ServiceProvider.GetRequiredService<FoodDbContext>();
         //Deletion/Creation of the database
-        //context.Database.EnsureDeleted();
+        context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
 
         if(!context.Foods.Any()){
@@ -107,6 +108,10 @@ public static class DBInit{
             var registratedFoods = new List<RegistratedFood>{
                 new RegistratedFood{
                     FoodId = 1,
+                    RegistrationId = 1
+                },
+                new RegistratedFood{
+                    FoodId = 4,
                     RegistrationId = 1
                 },
                 new RegistratedFood{

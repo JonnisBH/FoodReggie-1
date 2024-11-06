@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using FoodReggie_1.Models;
-using Microsoft.Extensions.Options;
+using FoodReggie_1.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +10,8 @@ builder.Services.AddDbContext<FoodDbContext>(Options => {
     Options.UseSqlite(
         builder.Configuration["ConnectionStrings:FoodDbContextConnection"]);
 });
+
+builder.Services.AddScoped<IFoodRepository, FoodRepository>();
 
 var app = builder.Build();
 
