@@ -1,0 +1,22 @@
+@model IEnumerable<Registration>
+
+<h1>List of Registrations</h1>
+
+@foreach(var registration in Model){
+    <div>
+        <h2>Registration @registration.RegistrationId</h2>
+        <table>
+            <tr>
+                <th>Registration Date</th>
+                <th>UserId</th>
+                <th>Name of User</th>
+            </tr>
+            <tr>
+                <td>@registration.RegistrationDate</td>
+                <td>@registration.UserId</td>
+                <td>@registration.User.Name</td>
+            </tr>
+        </table>
+        <partial name="_RegistratedFoodTable" model="registration.RegistratedFoods"/>
+    </div>
+}

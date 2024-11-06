@@ -1,0 +1,18 @@
+@model IEnumerable<RegistratedFood>
+
+<div>
+    <table>
+        <tr>
+            <th>RegistrationId</th>
+            <th>FoodId</th>
+            <th>Name of Food</th>
+        </tr>
+        @foreach(var registratedFood in Model){
+            <tr>
+                <td>@registratedFood.RegistratedFoodId</td>
+                <td>@registratedFood.FoodId</td>
+                <td>@registratedFood.Food.Name</td>
+            </tr>
+        }
+    </table>
+</div>
