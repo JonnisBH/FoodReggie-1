@@ -1,0 +1,64 @@
+2024-11-07 19:16:55.412 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-07 19:16:55.472 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-07 19:16:55.473 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 19:16:55.474 +01:00 [INF] Hosting environment: Development
+2024-11-07 19:16:55.474 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-07 19:16:56.865 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 19:16:56.869 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-07 19:16:56.887 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 19:16:56.891 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 19:16:56.895 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 19:16:56.995 +01:00 [INF] Executed ViewResult - view Index executed in 99.5658ms.
+2024-11-07 19:16:56.998 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 105.9027ms
+2024-11-07 19:16:56.998 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 19:16:57.003 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 139.0047ms
+2024-11-07 19:16:57.010 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 19:16:57.010 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/css/styles.css?v=x_cxDTT9uHXnhYS62FYwTjQMeU08CdzhPGIcKugz3Ok - null null
+2024-11-07 19:16:57.010 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 19:16:57.013 +01:00 [INF] The file /css/styles.css was not modified
+2024-11-07 19:16:57.013 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 2.9889ms
+2024-11-07 19:16:57.013 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 2.7198ms
+2024-11-07 19:16:57.013 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/css/styles.css?v=x_cxDTT9uHXnhYS62FYwTjQMeU08CdzhPGIcKugz3Ok - 304 null text/css 3.1736ms
+2024-11-07 19:16:57.014 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 19:16:57.014 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 19:17:05.662 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - null null
+2024-11-07 19:17:05.668 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-07 19:17:05.682 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-07 19:17:05.690 +01:00 [INF] Executing handler method FoodReggie_1.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-07 19:17:05.692 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-07 19:17:05.693 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-07 19:17:05.694 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-07 19:17:05.716 +01:00 [INF] Executed page /Account/Register in 33.3237ms
+2024-11-07 19:17:05.716 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-07 19:17:05.723 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: RenderSectionAsync invocation in '/Views/Shared/_Layout.cshtml' is invalid. The section 'Scripts' has already been rendered.
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsyncCore(String sectionName, Boolean required)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__32_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 19:17:05.729 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - 500 null text/html; charset=utf-8 66.6865ms
+2024-11-07 19:17:19.372 +01:00 [INF] Application is shutting down...

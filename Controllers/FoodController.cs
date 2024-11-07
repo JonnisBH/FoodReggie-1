@@ -5,6 +5,7 @@ using FoodReggie_1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FoodReggie_1.Controllers;
 
@@ -38,11 +39,13 @@ public class FoodController : Controller{
     }
 
     [HttpGet]
+    [Authorize]
     public IActionResult Create(){
         return View();
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Create(Food food){
         if(ModelState.IsValid){
             bool returnOk = await _foodRepository.Create(food);
@@ -55,6 +58,7 @@ public class FoodController : Controller{
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<IActionResult> Update(int id){
         var food = await _foodRepository.GetFoodById(id);
         if (food == null){
@@ -65,6 +69,7 @@ public class FoodController : Controller{
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Update(Food food){
         if (ModelState.IsValid){
             bool returnOk = await _foodRepository.Update(food);
@@ -77,6 +82,7 @@ public class FoodController : Controller{
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<IActionResult> Delete(int id){
         var food = await _foodRepository.GetFoodById(id);
         if(food == null){
@@ -87,6 +93,7 @@ public class FoodController : Controller{
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> ConfirmDelete(int id){
         bool returnOk = await _foodRepository.Delete(id);
         if(!returnOk){

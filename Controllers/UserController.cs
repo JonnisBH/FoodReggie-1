@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using FoodReggie_1.Models;
 using FoodReggie_1.DAL;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FoodReggie_1.Controllers;
 
@@ -12,8 +13,9 @@ public class UserController : Controller{
         _foodDbContext = foodDbContext;
     }
 
+    [Authorize]
     public async Task<IActionResult> Table(){
-        List<User> users = await _foodDbContext.Users.ToListAsync();
+        List<User> users = await _foodDbContext.Accounts.ToListAsync();
         return View(users);
     }
 }
