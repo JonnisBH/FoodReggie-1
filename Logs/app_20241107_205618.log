@@ -1,0 +1,151 @@
+2024-11-07 20:56:19.263 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-07 20:56:19.318 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-07 20:56:19.322 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 20:56:19.326 +01:00 [INF] Hosting environment: Development
+2024-11-07 20:56:19.327 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-07 20:56:20.722 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 20:56:20.729 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-07 20:56:20.762 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:20.771 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 20:56:20.778 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 20:56:20.906 +01:00 [INF] Executed ViewResult - view Index executed in 129.9653ms.
+2024-11-07 20:56:20.906 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 134.5782ms
+2024-11-07 20:56:20.906 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:20.911 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 191.1042ms
+2024-11-07 20:56:20.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:20.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/css/styles.css?v=QJVxZiVnc8hgdopNHG4GW7m8pC9tO7eQWbwLrP5KlkM - null null
+2024-11-07 20:56:20.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:20.929 +01:00 [INF] The file /css/styles.css was not modified
+2024-11-07 20:56:20.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/css/styles.css?v=QJVxZiVnc8hgdopNHG4GW7m8pC9tO7eQWbwLrP5KlkM - 304 null text/css 2.6948ms
+2024-11-07 20:56:20.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 2.8108ms
+2024-11-07 20:56:20.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 2.7862ms
+2024-11-07 20:56:20.930 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:20.930 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:22.375 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Registration/Table - null null
+2024-11-07 20:56:22.383 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-11-07 20:56:22.385 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-11-07 20:56:22.385 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Registration/Table - 302 0 null 10.6736ms
+2024-11-07 20:56:22.391 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Identity/Account/Login?ReturnUrl=%2FRegistration%2FTable - null null
+2024-11-07 20:56:22.392 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-07 20:56:22.407 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-07 20:56:22.416 +01:00 [INF] Executing handler method FoodReggie_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-07 20:56:22.418 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-07 20:56:22.418 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-07 20:56:22.419 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-07 20:56:22.419 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-07 20:56:22.440 +01:00 [INF] Executed page /Account/Login in 32.7693ms
+2024-11-07 20:56:22.440 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-07 20:56:22.440 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Identity/Account/Login?ReturnUrl=%2FRegistration%2FTable - 200 null text/html; charset=utf-8 49.186ms
+2024-11-07 20:56:22.461 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:22.462 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.8015ms
+2024-11-07 20:56:22.462 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:22.470 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:22.471 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.7104ms
+2024-11-07 20:56:22.471 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:24.509 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 20:56:24.510 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:24.510 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 20:56:24.511 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 20:56:24.525 +01:00 [INF] Executed ViewResult - view Index executed in 14.207ms.
+2024-11-07 20:56:24.525 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 14.9247ms
+2024-11-07 20:56:24.525 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:24.526 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 16.7496ms
+2024-11-07 20:56:24.542 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:24.542 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.6157ms
+2024-11-07 20:56:24.542 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:24.547 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:24.547 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.3995ms
+2024-11-07 20:56:24.547 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:25.467 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - null null
+2024-11-07 20:56:25.472 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-07 20:56:25.476 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-07 20:56:25.477 +01:00 [INF] Executing handler method FoodReggie_1.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-07 20:56:25.478 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-07 20:56:25.478 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-07 20:56:25.478 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-07 20:56:25.491 +01:00 [INF] Executed page /Account/Register in 14.9493ms
+2024-11-07 20:56:25.491 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-07 20:56:25.491 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - 200 null text/html; charset=utf-8 24.08ms
+2024-11-07 20:56:25.512 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:25.512 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.4843ms
+2024-11-07 20:56:25.512 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:25.517 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:25.518 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.3065ms
+2024-11-07 20:56:25.518 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:30.751 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 20:56:30.753 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:30.753 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 20:56:30.753 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 20:56:30.756 +01:00 [INF] Executed ViewResult - view Index executed in 2.674ms.
+2024-11-07 20:56:30.756 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 2.9819ms
+2024-11-07 20:56:30.756 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:30.756 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 4.8159ms
+2024-11-07 20:56:30.773 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:30.773 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.4081ms
+2024-11-07 20:56:30.774 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:30.780 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:30.780 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.462ms
+2024-11-07 20:56:30.780 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:32.120 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Identity/Account/Login - null null
+2024-11-07 20:56:32.122 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-07 20:56:32.123 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-07 20:56:32.124 +01:00 [INF] Executing handler method FoodReggie_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-07 20:56:32.124 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-07 20:56:32.124 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-07 20:56:32.124 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-07 20:56:32.124 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-07 20:56:32.128 +01:00 [INF] Executed page /Account/Login in 5.1203ms
+2024-11-07 20:56:32.128 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-07 20:56:32.128 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Identity/Account/Login - 200 null text/html; charset=utf-8 8.8377ms
+2024-11-07 20:56:32.150 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:32.151 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.5156ms
+2024-11-07 20:56:32.151 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:32.160 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:32.160 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.5096ms
+2024-11-07 20:56:32.160 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:33.248 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 20:56:33.249 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:33.249 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 20:56:33.249 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 20:56:33.250 +01:00 [INF] Executed ViewResult - view Index executed in 0.9753ms.
+2024-11-07 20:56:33.250 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 1.1237ms
+2024-11-07 20:56:33.250 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:33.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 1.9045ms
+2024-11-07 20:56:33.264 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:33.265 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.5045ms
+2024-11-07 20:56:33.265 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:33.269 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:33.269 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.418ms
+2024-11-07 20:56:33.269 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:34.052 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - null null
+2024-11-07 20:56:34.053 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-07 20:56:34.053 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-07 20:56:34.055 +01:00 [INF] Executing handler method FoodReggie_1.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-07 20:56:34.055 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-07 20:56:34.055 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-07 20:56:34.055 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-07 20:56:34.058 +01:00 [INF] Executed page /Account/Register in 4.8982ms
+2024-11-07 20:56:34.058 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-07 20:56:34.059 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Identity/Account/Register - 200 null text/html; charset=utf-8 6.5283ms
+2024-11-07 20:56:34.078 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:34.078 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.4492ms
+2024-11-07 20:56:34.078 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:34.084 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:34.085 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.4591ms
+2024-11-07 20:56:34.085 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:56:35.828 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 20:56:35.829 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:35.829 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 20:56:35.829 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 20:56:35.831 +01:00 [INF] Executed ViewResult - view Index executed in 1.9378ms.
+2024-11-07 20:56:35.831 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 2.2541ms
+2024-11-07 20:56:35.831 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 20:56:35.832 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 3.5874ms
+2024-11-07 20:56:35.851 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 20:56:35.852 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.6584ms
+2024-11-07 20:56:35.852 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 20:56:35.859 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 20:56:35.859 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.4232ms
+2024-11-07 20:56:35.859 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 20:57:18.558 +01:00 [INF] Application is shutting down...

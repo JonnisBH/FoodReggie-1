@@ -24,6 +24,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>{
     options.Password.RequiredUniqueChars = 6;
 
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(60);
+    options.Lockout.MaxFailedAccessAttempts = 3;
     options.Lockout.AllowedForNewUsers = true;
 
     options.User.RequireUniqueEmail = true;
@@ -31,7 +32,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>{
     options.SignIn.RequireConfirmedAccount = false;
 })
 .AddEntityFrameworkStores<FoodDbContext>()
-.AddDefaultTokenProviders();
+.AddDefaultTokenProviders()
+.AddDefaultUI();
 
 builder.Services.AddScoped<IFoodRepository, FoodRepository>();
 
