@@ -1,0 +1,6 @@
+2024-11-06 20:04:07.357 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-06 20:04:07.378 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-06 20:04:07.380 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-06 20:04:07.380 +01:00 [INF] Hosting environment: Development
+2024-11-06 20:04:07.380 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-06 20:04:21.614 +01:00 [INF] Application is shutting down...
