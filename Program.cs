@@ -15,12 +15,34 @@ builder.Services.AddDbContext<FoodDbContext>(Options => {
         builder.Configuration["ConnectionStrings:FoodDbContextConnection"]);
 });
 
-builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<FoodDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>{
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequiredUniqueChars = 6;
+
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(60);
+    options.Lockout.AllowedForNewUsers = true;
+
+    options.User.RequireUniqueEmail = true;
+
+    options.SignIn.RequireConfirmedAccount = false;
+});
 
 builder.Services.AddScoped<IFoodRepository, FoodRepository>();
 
 builder.Services.AddRazorPages();
-builder.Services.AddSession();
+builder.Services.AddSession(options =>{
+    options.Cookie.Name = ".FoodReggie1.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.ConfigureApplicationCookie(options =>{
+    options.LoginPath = "/Identity/Account/Login";
+});
 
 var loggerConfiguration = new LoggerConfiguration()
     .MinimumLevel.Information()
