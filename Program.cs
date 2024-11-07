@@ -29,7 +29,9 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>{
     options.User.RequireUniqueEmail = true;
 
     options.SignIn.RequireConfirmedAccount = false;
-});
+})
+.AddEntityFrameworkStores<FoodDbContext>()
+.AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IFoodRepository, FoodRepository>();
 
