@@ -1,0 +1,12 @@
+2024-11-07 16:37:44.007 +01:00 [INF] Applying migration '20241104175806_InitDb'.
+2024-11-07 16:37:44.019 +01:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Foods" (
+    "FoodId" INTEGER NOT NULL CONSTRAINT "PK_Foods" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "FoodGroup" TEXT NULL,
+    "Calories" INTEGER NOT NULL,
+    "Protein" REAL NOT NULL,
+    "Carbohydrates" REAL NOT NULL,
+    "Fats" REAL NOT NULL,
+    "ImageURL" TEXT NULL
+);

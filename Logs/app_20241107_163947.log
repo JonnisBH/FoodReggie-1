@@ -1,0 +1,21 @@
+2024-11-07 16:39:48.027 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-07 16:39:48.052 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-07 16:39:48.054 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 16:39:48.054 +01:00 [INF] Hosting environment: Development
+2024-11-07 16:39:48.054 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-07 16:39:49.862 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 16:39:49.865 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-07 16:39:49.871 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 16:39:49.876 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 16:39:49.880 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 16:39:49.944 +01:00 [INF] Executed ViewResult - view Index executed in 64.126ms.
+2024-11-07 16:39:49.946 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 69.1087ms
+2024-11-07 16:39:49.946 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 16:39:49.948 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 87.257ms
+2024-11-07 16:39:49.961 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 16:39:49.961 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 16:39:49.963 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 2.4067ms
+2024-11-07 16:39:49.964 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 2.3405ms
+2024-11-07 16:39:49.964 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 16:39:49.964 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 16:45:10.548 +01:00 [INF] Application is shutting down...
