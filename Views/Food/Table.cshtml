@@ -1,0 +1,32 @@
+@model FoodViewModel
+
+<a href="/Food/Grid">Grid View</a>
+
+<div>
+    <h1>@ViewBag.CurrentViewName</h1>
+    <table>
+        <tr>
+            <th>FoodId</th><th>Name</th><th>Food Group</th><th>Nutrition values per 100 gram</th><th>Edit</th>
+        </tr>
+    @foreach (var food in Model.Foods){
+        <tr>
+            <td>@food.FoodId</td>
+            <td>@food.Name</td>
+            <td>@food.FoodGroup</td>
+            <td>
+                @food.Calories.ToString("Energy: 0 kcal")
+                @food.Protein.ToString("Protein: 0.0 g")
+                @food.Carbohydrates.ToString("Carbohydrates: 0.0 g")
+                @food.Fats.ToString("Fats: 0.0 g")
+            </td>
+            <td>
+                <a asp-action="Update" asp-route-id="@food.FoodId">Update</a>
+                <a asp-action="Delete" asp-route-id="@food.FoodId">Delete</a>
+            </td>
+        </tr>
+    }
+    </table>
+    <p>
+        <a asp-controller="Food" asp-action="Create">Create a new food item</a></p>
+</div>
+

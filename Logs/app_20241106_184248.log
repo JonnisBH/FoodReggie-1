@@ -1,0 +1,128 @@
+2024-11-06 18:42:49.153 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-11-06 18:42:49.190 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Foods" (
+    "FoodId" INTEGER NOT NULL CONSTRAINT "PK_Foods" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "FoodGroup" TEXT NULL,
+    "Calories" INTEGER NOT NULL,
+    "Protein" REAL NOT NULL,
+    "Carbohydrates" REAL NOT NULL,
+    "Fats" REAL NOT NULL,
+    "ImageURL" TEXT NULL
+);
+2024-11-06 18:42:49.191 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "UserId" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2024-11-06 18:42:49.192 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Registrations" (
+    "RegistrationId" INTEGER NOT NULL CONSTRAINT "PK_Registrations" PRIMARY KEY AUTOINCREMENT,
+    "RegistrationDate" TEXT NOT NULL,
+    "UserId" INTEGER NOT NULL,
+    CONSTRAINT "FK_Registrations_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("UserId") ON DELETE CASCADE
+);
+2024-11-06 18:42:49.192 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "RegistratedFoods" (
+    "RegistratedFoodId" INTEGER NOT NULL CONSTRAINT "PK_RegistratedFoods" PRIMARY KEY AUTOINCREMENT,
+    "FoodId" INTEGER NOT NULL,
+    "RegistrationId" INTEGER NOT NULL,
+    CONSTRAINT "FK_RegistratedFoods_Foods_FoodId" FOREIGN KEY ("FoodId") REFERENCES "Foods" ("FoodId") ON DELETE CASCADE,
+    CONSTRAINT "FK_RegistratedFoods_Registrations_RegistrationId" FOREIGN KEY ("RegistrationId") REFERENCES "Registrations" ("RegistrationId") ON DELETE CASCADE
+);
+2024-11-06 18:42:49.193 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_RegistratedFoods_FoodId" ON "RegistratedFoods" ("FoodId");
+2024-11-06 18:42:49.193 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_RegistratedFoods_RegistrationId" ON "RegistratedFoods" ("RegistrationId");
+2024-11-06 18:42:49.194 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Registrations_UserId" ON "Registrations" ("UserId");
+2024-11-06 18:42:49.270 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Foods" AS "f")
+2024-11-06 18:42:49.342 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 4), @p4='?' (Size = 19), @p5='?' (Size = 7), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.349 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 4), @p4='?' (Size = 18), @p5='?' (Size = 13), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.350 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 4), @p4='?' (Size = 18), @p5='?' (Size = 12), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.351 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 6), @p4='?' (Size = 16), @p5='?' (Size = 12), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.351 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 9), @p4='?' (Size = 20), @p5='?' (Size = 8), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.352 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Double), @p2='?' (DbType = Double), @p3='?' (Size = 6), @p4='?' (Size = 17), @p5='?' (Size = 5), @p6='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Foods" ("Calories", "Carbohydrates", "Fats", "FoodGroup", "ImageURL", "Name", "Protein")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "FoodId";
+2024-11-06 18:42:49.358 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2024-11-06 18:42:49.363 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 23), @p1='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "Name")
+VALUES (@p0, @p1)
+RETURNING "UserId";
+2024-11-06 18:42:49.365 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 27), @p1='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "Name")
+VALUES (@p0, @p1)
+RETURNING "UserId";
+2024-11-06 18:42:49.367 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Registrations" AS "r")
+2024-11-06 18:42:49.377 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 19), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Registrations" ("RegistrationDate", "UserId")
+VALUES (@p0, @p1)
+RETURNING "RegistrationId";
+2024-11-06 18:42:49.378 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 19), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Registrations" ("RegistrationDate", "UserId")
+VALUES (@p0, @p1)
+RETURNING "RegistrationId";
+2024-11-06 18:42:49.381 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "RegistratedFoods" AS "r")
+2024-11-06 18:42:49.385 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "RegistratedFoods" ("FoodId", "RegistrationId")
+VALUES (@p0, @p1)
+RETURNING "RegistratedFoodId";
+2024-11-06 18:42:49.386 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "RegistratedFoods" ("FoodId", "RegistrationId")
+VALUES (@p0, @p1)
+RETURNING "RegistratedFoodId";
+2024-11-06 18:42:49.387 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "RegistratedFoods" ("FoodId", "RegistrationId")
+VALUES (@p0, @p1)
+RETURNING "RegistratedFoodId";
+2024-11-06 18:42:49.437 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-06 18:42:49.470 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-06 18:42:49.473 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-06 18:42:49.473 +01:00 [INF] Hosting environment: Development
+2024-11-06 18:42:49.474 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-06 18:42:49.707 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-06 18:42:49.713 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-06 18:42:49.723 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-06 18:42:49.731 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-06 18:42:49.736 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-06 18:42:49.830 +01:00 [INF] Executed ViewResult - view Index executed in 93.2778ms.
+2024-11-06 18:42:49.831 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 99.0081ms
+2024-11-06 18:42:49.831 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-06 18:42:49.833 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 126.1092ms
+2024-11-06 18:42:49.914 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-06 18:42:49.914 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-06 18:42:49.919 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 4.8749ms
+2024-11-06 18:42:49.919 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 5.4397ms
+2024-11-06 18:42:49.928 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-06 18:42:49.928 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404

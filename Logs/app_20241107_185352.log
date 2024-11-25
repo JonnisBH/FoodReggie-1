@@ -1,0 +1,243 @@
+2024-11-07 18:53:52.973 +01:00 [INF] User profile is available. Using '/Users/andreashattmann/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-07 18:53:52.992 +01:00 [INF] Now listening on: http://localhost:5271
+2024-11-07 18:53:52.993 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 18:53:52.994 +01:00 [INF] Hosting environment: Development
+2024-11-07 18:53:52.994 +01:00 [INF] Content root path: /Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1
+2024-11-07 18:53:54.556 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 18:53:54.561 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-07 18:53:54.572 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:53:54.579 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 18:53:54.585 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 18:53:54.656 +01:00 [INF] Executed ViewResult - view Index executed in 71.0821ms.
+2024-11-07 18:53:54.657 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 77.2014ms
+2024-11-07 18:53:54.657 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:53:54.660 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 106.4007ms
+2024-11-07 18:53:54.675 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:53:54.676 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:53:54.680 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 5.6499ms
+2024-11-07 18:53:54.680 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 4.1445ms
+2024-11-07 18:53:54.681 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:53:54.681 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:53:56.129 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/User/Table - null null
+2024-11-07 18:53:56.131 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.UserController.Table (FoodReggie-1)'
+2024-11-07 18:53:56.136 +01:00 [INF] Route matched with {action = "Table", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.UserController (FoodReggie-1).
+2024-11-07 18:53:56.206 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:53:56.233 +01:00 [INF] Executed ViewResult - view Table executed in 27.8971ms.
+2024-11-07 18:53:56.233 +01:00 [INF] Executed action FoodReggie_1.Controllers.UserController.Table (FoodReggie-1) in 97.5255ms
+2024-11-07 18:53:56.233 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.UserController.Table (FoodReggie-1)'
+2024-11-07 18:53:56.237 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/User/Table - 200 null text/html; charset=utf-8 107.9187ms
+2024-11-07 18:53:56.264 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:53:56.265 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.3958ms
+2024-11-07 18:53:56.265 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:53:56.271 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:53:56.271 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.4649ms
+2024-11-07 18:53:56.271 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:04.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Table - null null
+2024-11-07 18:54:04.651 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:04.654 +01:00 [INF] Route matched with {action = "Table", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:04.687 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:04.712 +01:00 [INF] Executed ViewResult - view Table executed in 25.0606ms.
+2024-11-07 18:54:04.712 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1) in 57.6573ms
+2024-11-07 18:54:04.713 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:04.714 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Table - 200 null text/html; charset=utf-8 63.6327ms
+2024-11-07 18:54:04.749 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:04.749 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.3536ms
+2024-11-07 18:54:04.749 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:04.755 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:04.755 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.3495ms
+2024-11-07 18:54:04.756 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:07.078 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Update/1 - null null
+2024-11-07 18:54:07.081 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1)'
+2024-11-07 18:54:07.088 +01:00 [INF] Route matched with {action = "Update", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:07.103 +01:00 [INF] Executing ViewResult, running view Update.
+2024-11-07 18:54:07.134 +01:00 [INF] Executed ViewResult - view Update executed in 30.6242ms.
+2024-11-07 18:54:07.134 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1) in 45.8364ms
+2024-11-07 18:54:07.134 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1)'
+2024-11-07 18:54:07.134 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Update/1 - 200 null text/html; charset=utf-8 55.9573ms
+2024-11-07 18:54:07.156 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:07.156 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.263ms
+2024-11-07 18:54:07.156 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:07.166 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:07.167 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.5675ms
+2024-11-07 18:54:07.167 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:07.949 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Table - null null
+2024-11-07 18:54:07.950 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:07.950 +01:00 [INF] Route matched with {action = "Table", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:07.956 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:07.958 +01:00 [INF] Executed ViewResult - view Table executed in 2.4934ms.
+2024-11-07 18:54:07.959 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1) in 8.6581ms
+2024-11-07 18:54:07.959 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:07.959 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Table - 200 null text/html; charset=utf-8 9.787ms
+2024-11-07 18:54:07.976 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:07.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.3458ms
+2024-11-07 18:54:07.976 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:07.981 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:07.981 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.4639ms
+2024-11-07 18:54:07.982 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:08.819 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Update/1 - null null
+2024-11-07 18:54:08.819 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1)'
+2024-11-07 18:54:08.820 +01:00 [INF] Route matched with {action = "Update", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:08.825 +01:00 [INF] Executing ViewResult, running view Update.
+2024-11-07 18:54:08.828 +01:00 [INF] Executed ViewResult - view Update executed in 2.9452ms.
+2024-11-07 18:54:08.828 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1) in 8.0647ms
+2024-11-07 18:54:08.828 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Update (FoodReggie-1)'
+2024-11-07 18:54:08.828 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Update/1 - 200 null text/html; charset=utf-8 8.9101ms
+2024-11-07 18:54:10.861 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Table - null null
+2024-11-07 18:54:10.862 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:10.862 +01:00 [INF] Route matched with {action = "Table", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:10.865 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:10.867 +01:00 [INF] Executed ViewResult - view Table executed in 2.0183ms.
+2024-11-07 18:54:10.867 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1) in 4.6242ms
+2024-11-07 18:54:10.867 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:10.867 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Table - 200 null text/html; charset=utf-8 5.3558ms
+2024-11-07 18:54:10.885 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:10.886 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2239ms
+2024-11-07 18:54:10.886 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:10.892 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:10.892 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2759ms
+2024-11-07 18:54:10.892 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:13.271 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Grid - null null
+2024-11-07 18:54:13.272 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Grid (FoodReggie-1)'
+2024-11-07 18:54:13.275 +01:00 [INF] Route matched with {action = "Grid", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:13.278 +01:00 [INF] Executing ViewResult, running view Grid.
+2024-11-07 18:54:13.286 +01:00 [INF] Executed ViewResult - view Grid executed in 8.109ms.
+2024-11-07 18:54:13.286 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Grid (FoodReggie-1) in 10.9426ms
+2024-11-07 18:54:13.286 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Grid (FoodReggie-1)'
+2024-11-07 18:54:13.286 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Grid - 200 null text/html; charset=utf-8 15.0545ms
+2024-11-07 18:54:13.328 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:13.329 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2355ms
+2024-11-07 18:54:13.329 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:13.333 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:13.333 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.1939ms
+2024-11-07 18:54:13.334 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:13.334 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/chicken.jpg - null null
+2024-11-07 18:54:13.334 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/salmon.jpg - null null
+2024-11-07 18:54:13.336 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/ribeye.jpg - null null
+2024-11-07 18:54:13.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/rice.jpg - null null
+2024-11-07 18:54:13.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/potatoes.jpg - null null
+2024-11-07 18:54:13.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/images/pasta.jpg - null null
+2024-11-07 18:54:13.343 +01:00 [INF] Sending file. Request path: '/images/pasta.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/pasta.jpg'
+2024-11-07 18:54:13.343 +01:00 [INF] Sending file. Request path: '/images/potatoes.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/potatoes.jpg'
+2024-11-07 18:54:13.343 +01:00 [INF] Sending file. Request path: '/images/chicken.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/chicken.jpg'
+2024-11-07 18:54:13.343 +01:00 [INF] Sending file. Request path: '/images/rice.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/rice.jpg'
+2024-11-07 18:54:13.343 +01:00 [INF] Sending file. Request path: '/images/ribeye.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/ribeye.jpg'
+2024-11-07 18:54:13.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/ribeye.jpg - 200 121690 image/jpeg 7.1067ms
+2024-11-07 18:54:13.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/chicken.jpg - 200 14774 image/jpeg 9.5155ms
+2024-11-07 18:54:13.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/rice.jpg - 200 44056 image/jpeg 6.3689ms
+2024-11-07 18:54:13.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/pasta.jpg - 200 41343 image/jpeg 5.7798ms
+2024-11-07 18:54:13.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/potatoes.jpg - 200 16768 image/jpeg 6.153ms
+2024-11-07 18:54:13.344 +01:00 [INF] Sending file. Request path: '/images/salmon.jpg'. Physical path: '/Users/andreashattmann/Desktop/ITPE3200 Webapplikasjoner/FoodReggie-1/wwwroot/images/salmon.jpg'
+2024-11-07 18:54:13.344 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/images/salmon.jpg - 200 455743 image/jpeg 10.226ms
+2024-11-07 18:54:17.319 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Table - null null
+2024-11-07 18:54:17.320 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:17.320 +01:00 [INF] Route matched with {action = "Table", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:17.323 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:17.324 +01:00 [INF] Executed ViewResult - view Table executed in 0.8831ms.
+2024-11-07 18:54:17.324 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1) in 4.1409ms
+2024-11-07 18:54:17.324 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:17.324 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Table - 200 null text/html; charset=utf-8 5.0915ms
+2024-11-07 18:54:17.339 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:17.339 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:17.339 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2724ms
+2024-11-07 18:54:17.339 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2565ms
+2024-11-07 18:54:17.339 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:17.339 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:17.998 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 18:54:17.998 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:17.999 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 18:54:17.999 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 18:54:18.000 +01:00 [INF] Executed ViewResult - view Index executed in 0.6547ms.
+2024-11-07 18:54:18.000 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 0.8692ms
+2024-11-07 18:54:18.000 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:18.000 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 1.4832ms
+2024-11-07 18:54:18.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:18.028 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.379ms
+2024-11-07 18:54:18.028 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:18.037 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:18.037 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2283ms
+2024-11-07 18:54:18.037 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:19.385 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Registration/Table - null null
+2024-11-07 18:54:19.385 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1)'
+2024-11-07 18:54:19.389 +01:00 [INF] Route matched with {action = "Table", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.RegistrationController (FoodReggie-1).
+2024-11-07 18:54:19.398 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:19.427 +01:00 [INF] Executed ViewResult - view Table executed in 29.0609ms.
+2024-11-07 18:54:19.427 +01:00 [INF] Executed action FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1) in 37.1757ms
+2024-11-07 18:54:19.427 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1)'
+2024-11-07 18:54:19.427 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Registration/Table - 200 null text/html; charset=utf-8 42.2914ms
+2024-11-07 18:54:19.458 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:19.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2605ms
+2024-11-07 18:54:19.458 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:19.464 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:19.465 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2647ms
+2024-11-07 18:54:19.465 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:29.549 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 18:54:29.550 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:29.550 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 18:54:29.551 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 18:54:29.552 +01:00 [INF] Executed ViewResult - view Index executed in 1.4116ms.
+2024-11-07 18:54:29.552 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 1.6772ms
+2024-11-07 18:54:29.552 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:29.552 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 2.7809ms
+2024-11-07 18:54:29.588 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:29.588 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.3245ms
+2024-11-07 18:54:29.588 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:29.602 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:29.602 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.3083ms
+2024-11-07 18:54:29.602 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:30.795 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Food/Table - null null
+2024-11-07 18:54:30.796 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:30.796 +01:00 [INF] Route matched with {action = "Table", controller = "Food"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.FoodController (FoodReggie-1).
+2024-11-07 18:54:30.800 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:30.801 +01:00 [INF] Executed ViewResult - view Table executed in 1.0509ms.
+2024-11-07 18:54:30.801 +01:00 [INF] Executed action FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1) in 4.9182ms
+2024-11-07 18:54:30.801 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.FoodController.Table (FoodReggie-1)'
+2024-11-07 18:54:30.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Food/Table - 200 null text/html; charset=utf-8 5.9604ms
+2024-11-07 18:54:30.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:30.830 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2189ms
+2024-11-07 18:54:30.831 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:30.838 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:30.838 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.1905ms
+2024-11-07 18:54:30.838 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:32.790 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 18:54:32.790 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:32.790 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 18:54:32.790 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 18:54:32.791 +01:00 [INF] Executed ViewResult - view Index executed in 0.6473ms.
+2024-11-07 18:54:32.791 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 0.8203ms
+2024-11-07 18:54:32.791 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:32.791 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 1.3212ms
+2024-11-07 18:54:32.821 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:32.822 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2698ms
+2024-11-07 18:54:32.822 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:32.835 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:32.835 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2842ms
+2024-11-07 18:54:32.835 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:33.742 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/Registration/Table - null null
+2024-11-07 18:54:33.742 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1)'
+2024-11-07 18:54:33.742 +01:00 [INF] Route matched with {action = "Table", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller FoodReggie_1.Controllers.RegistrationController (FoodReggie-1).
+2024-11-07 18:54:33.745 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-07 18:54:33.755 +01:00 [INF] Executed ViewResult - view Table executed in 9.6467ms.
+2024-11-07 18:54:33.756 +01:00 [INF] Executed action FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1) in 13.6256ms
+2024-11-07 18:54:33.756 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.RegistrationController.Table (FoodReggie-1)'
+2024-11-07 18:54:33.756 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/Registration/Table - 200 null text/html; charset=utf-8 14.7919ms
+2024-11-07 18:54:33.801 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:33.801 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2412ms
+2024-11-07 18:54:33.801 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:33.812 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:33.812 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.266ms
+2024-11-07 18:54:33.813 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:35.459 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/ - null null
+2024-11-07 18:54:35.459 +01:00 [INF] Executing endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:35.460 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller FoodReggie_1.Controllers.HomeController (FoodReggie-1).
+2024-11-07 18:54:35.460 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-07 18:54:35.464 +01:00 [INF] Executed ViewResult - view Index executed in 3.8481ms.
+2024-11-07 18:54:35.464 +01:00 [INF] Executed action FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1) in 4.2186ms
+2024-11-07 18:54:35.465 +01:00 [INF] Executed endpoint 'FoodReggie_1.Controllers.HomeController.Index (FoodReggie-1)'
+2024-11-07 18:54:35.466 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/ - 200 null text/html; charset=utf-8 6.9487ms
+2024-11-07 18:54:35.494 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - null null
+2024-11-07 18:54:35.494 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/js.jquery.min.js - 404 0 null 0.2374ms
+2024-11-07 18:54:35.494 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/js.jquery.min.js, Response status code: 404
+2024-11-07 18:54:35.507 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - null null
+2024-11-07 18:54:35.507 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5271/FoodReggie_1.styles.css - 404 0 null 0.2119ms
+2024-11-07 18:54:35.507 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5271/FoodReggie_1.styles.css, Response status code: 404
+2024-11-07 18:54:38.157 +01:00 [INF] Application is shutting down...
