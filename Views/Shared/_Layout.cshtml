@@ -15,28 +15,29 @@
 </head>
 <body class="tw-bg-gray-100">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+        <nav class="tw-bg-gray-100 navbar navbar-expand-sm navbar-toggleable-sm navbar-light px-4 py-3 tw-border-b-4">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FoodReggie</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <!--Font Awesome Free 6.7.1 by fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <img src="../images/carrot-solid.svg" width="30" height="30" class="d-inline-block align-top tw-mr-1" alt="">
+                    FOODREGGIE
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Food" asp-action="Table">Food</a>
-                        </li>
                         <li>
-                            <partial name="_LoginPartial"/>
+                            <partial class="nav-item" name="_LoginPartial"/>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="tw-container tw-h-screen tw-max-w-none">
+        <main role="main">
             @RenderBody()
             @RenderSection("Scripts", required: false)
         </main>

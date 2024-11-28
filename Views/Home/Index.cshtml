@@ -2,10 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4 tw-font-bold">Welcome to our food register application!</h1>
-    <div>
-        <a class="btn btn-primary tw-rounded-lg m-2" type="button" asp-area="" asp-controller="Food" asp-action="Table">Get started!</a>
-        <a class="nav-link text-dark" type="button" asp-area="" asp-controller="Registration" asp-action="Table">Users registered</a>
+<div class="tw-flex tw-w-full tw-h-screen">
+    <div id="backgroundAnimated" class="tw-flex-[6] tw-flex tw-flex-col tw-space-y-3 tw-justify-center tw-items-start tw-backdrop-invert">
+         <h1 class="tw-mx-40 tw-text-6xl tw-font-bold tw-text-white">Welcome to our FoodReggie!</h1>
+         <p class="tw-mx-40 tw-text-xl tw-text-white">
+            A food registration tool to help you track any food of your choice.
+            <a class="tw-underline tw-decoration-sky-500">Create, read, update and delete</a>
+            within a single page application.
+         </p>
+    </div>
+
+    <div class="tw-flex-[4] tw-flex tw-flex-col tw-space-y-5 tw-justify-center tw-items-center">
+         <h1 class="tw-text-4xl tw-font-bold">Navigation</h1>
+         <a type="button" class="btn btn-primary btn-lg tw-rounded-lg" asp-area="" asp-controller="Food" asp-action="Table">Get started</a>
+         <a type="button" class="btn btn-light tw-rounded-lg" asp-area="" asp-controller="Registration" asp-action="Table">Users registered</a>
     </div>
 </div>
