@@ -15,7 +15,7 @@
 </head>
 <body class="tw-bg-gray-100">
     <header>
-        <nav class="tw-bg-gray-100 navbar navbar-expand-sm navbar-toggleable-sm navbar-light px-4 py-3 tw-border-b-4">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light tw-px-4 tw-py-4">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <!--Font Awesome Free 6.7.1 by fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -36,10 +36,12 @@
             </div>
         </nav>
     </header>
-    <div class="tw-container tw-h-screen tw-max-w-none">
+    <div class="tw-container-none tw-h-full tw-w-full">
         <main role="main">
-            @RenderBody()
-            @RenderSection("Scripts", required: false)
+            <div class="tw-outline-dashed tw-outline-1 tw-outline-offset-0 tw-outline-gray-300 tw-mx-28 tw-my-6 tw-shadow-xl tw-rounded-lg">
+                @RenderBody()
+                @RenderSection("Scripts", required: false)
+            </div>
         </main>
     </div>
 </body>

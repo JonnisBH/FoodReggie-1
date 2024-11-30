@@ -1,11 +1,12 @@
 @model IEnumerable<Registration>
 
-<h1>List of Registrations</h1>
+<h1 class="tw-font-bold tw-text-4xl tw-justify-center">List of Registrations</h1>
 
 @foreach(var registration in Model){
-    <div>
-        <h2>Registration @registration.RegistrationId</h2>
-        <table>
+    <div class="tw-flex tw-m-4 tw-justify-center">
+        
+        <table class="tw-tabel-auto">
+            <p>Registration @registration.RegistrationId</p>
             <tr>
                 <th>Registration Date</th>
                 <th>UserId</th>

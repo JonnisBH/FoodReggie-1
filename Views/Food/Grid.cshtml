@@ -1,13 +1,15 @@
 @model FoodViewModel
-
-<h1>Food menu (@ViewBag.CurrentViewName View)</h1>
-<a href="/Food/Table">Table View</a>
-
-@foreach (var food in Model.Foods){
-    <div>
-        <img src="@food.ImageURL" alt="@food.Name">
-        <div>
-            @food.Name
-        </div>
+<div class="tw-p-14 tw-flex tw-flex-col">
+    <h1 class="tw-font-bold tw-text-2xl">Food menu (@ViewBag.CurrentViewName View)</h1>
+    <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-6">
+        @foreach (var food in Model.Foods){
+            <div class="tw-font-bold tw-shadow-md">
+                <img class="tw-w-60 tw-h-auto tw-rounded-t-lg" src="@food.ImageURL" alt="@food.Name">
+                <div class="tw-rounded-b-lg tw-bg-white tw-py-4 tw-px-2">
+                    @food.Name
+                </div>
+            </div>
+        }
     </div>
-}
+    <a type="button" class=" btn btn-outline-primary tw-rounded-lg" href="/Food/Table">View as table</a>
+</div>
