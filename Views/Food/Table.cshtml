@@ -1,43 +1,43 @@
 @model FoodViewModel
-
-<div class="tw-flex tw-flex-col">
-    <h1 class="tw-font-bold tw-text-2xl tw-pt-14 tw-px-14">Your list</h1>
-    <h1>@ViewBag.CurrentViewName</h1>
-    <div class="tw-pt-4 tw-pb-8 tw-px-14">
-        <table class="tw-table-auto tw-border-collapse tw-w-full">
-            <thead>
-                <tr>
-                    <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tl-lg">Id</th>
-                    <th class="tw-p-4 tw-bg-black tw-text-white">Name</th>
-                    <th class="tw-p-4 tw-bg-black tw-text-white">Category</th>
-                    <th class="tw-p-4 tw-bg-black tw-text-white">Nutrition values per 100 gram</th>
-                    <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tr-lg">Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var food in Model.Foods){
-                    <tr class="tw-border-b tw-border-gray-300">
-                        <td class="tw-p-4">@food.FoodId</td>
-                        <td class="tw-p-4">@food.Name</td>
-                        <td class="tw-p-4">@food.FoodGroup</td>
-                        <td class="tw-p-4">
-                            @food.Calories.ToString("Energy: 0 kcal")
-                            @food.Protein.ToString("Protein: 0.0 g")
-                            @food.Carbohydrates.ToString("Carbohydrates: 0.0 g")
-                            @food.Fats.ToString("Fats: 0.0 g")
-                        </td >
-                        <td class="tw-flex tw-gap-3 tw-p-2">
-                            <a class="btn btn-primary btn-sm tw-rounded-lg" asp-action="Update" asp-route-id="@food.FoodId">Update</a>
-                            <a type="button" class="btn btn-danger btn-sm tw-rounded-lg" asp-action="Delete" asp-route-id="@food.FoodId">Delete</a>
-                        </td>
+<div class="tw-mx-28 tw-my-6">
+    <div class="tw-flex tw-flex-col">
+        <h1 class="tw-font-bold tw-text-2xl tw-pt-14 tw-px-14">Your list</h1>
+        <h1>@ViewBag.CurrentViewName</h1>
+        <div class="tw-pt-4 tw-pb-8 tw-px-14">
+            <table class="tw-table-auto tw-border-collapse tw-w-full">
+                <thead>
+                    <tr>
+                        <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tl-lg">Id</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white">Name</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white">Category</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white">Nutrition values per 100 gram</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tr-lg">Edit</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="tw-flex tw-gap-3 tw-pb-14 tw-px-14">
-        <a type="button" class="btn btn-success tw-rounded-lg" asp-controller="Food" asp-action="Create">Create a new food item</a>
-        <a type="button" class=" btn btn-outline-primary tw-rounded-lg" href="/Food/Grid">View as grid</a>
+                </thead>
+                <tbody>
+                    @foreach (var food in Model.Foods){
+                        <tr class="tw-border-b tw-border-gray-300">
+                            <td class="tw-p-4">@food.FoodId</td>
+                            <td class="tw-p-4">@food.Name</td>
+                            <td class="tw-p-4">@food.FoodGroup</td>
+                            <td class="tw-p-4">
+                                @food.Calories.ToString("Energy: 0 kcal")
+                                @food.Protein.ToString("Protein: 0.0 g")
+                                @food.Carbohydrates.ToString("Carbohydrates: 0.0 g")
+                                @food.Fats.ToString("Fats: 0.0 g")
+                            </td >
+                            <td class="tw-flex tw-gap-3 tw-p-4">
+                                <a class="btn btn-primary btn-sm tw-rounded-lg" asp-action="Update" asp-route-id="@food.FoodId">Update</a>
+                                <a type="button" class="btn btn-danger btn-sm tw-rounded-lg" asp-action="Delete" asp-route-id="@food.FoodId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="tw-flex tw-gap-3 tw-pb-14 tw-px-14">
+            <a type="button" class="btn btn-success tw-rounded-lg" asp-controller="Food" asp-action="Create">Create a new food item</a>
+            <a type="button" class=" btn btn-outline-primary tw-rounded-lg" href="/Food/Grid">View as grid</a>
+        </div>
     </div>
 </div>
-

@@ -1,33 +1,35 @@
 @model Food
 
-<div class="tw-p-14">
-    <h1 class="tw-font-bold tw-text-2xl">Delete Food Item</h1>
-    <h2>Are you sure you want to delete this food item?</h2>
-    <div>
-        <dt>Food Id</dt>
-        <dd>@Model.FoodId</dd>
+<div class="tw-flex tw-items-center tw-justify-center tw-bg-gray-100 tw-mx-28 tw-my-20">
+     <div class="tw-bg-white tw-p-14 tw-rounded-lg tw-shadow-xl">
+        <h1 class="tw-font-bold tw-text-2xl tw-px-2">Delete Food Item</h1>
+        <h2 class=" tw-px-2 tw-py-4">Are you sure you want to delete this food item?</h2>
+        <div>
+            <dt class="tw-px-2 tw-py-1">Food Id</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.FoodId</dd>
 
-        <dt>Food Group</dt>
-        <dd>@Model.FoodGroup</dd>
+            <dt class="tw-px-2 tw-py-1">Food Group</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.FoodGroup</dd>
 
-        <dt>Calories</dt>
-        <dd>@Model.Calories</dd>
+            <dt class="tw-px-2 tw-py-1">Calories</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.Calories</dd>
 
-        <dt>Protein</dt>
-        <dd>@Model.Protein</dd>
+            <dt class="tw-px-2 tw-py-1">Protein</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.Protein</dd>
 
-        <dt>Carbohydrates</dt>
-        <dd>@Model.Carbohydrates</dd>
+            <dt class="tw-px-2 tw-py-1">Carbohydrates</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.Carbohydrates</dd>
 
-        <dt>Fats</dt>
-        <dd>@Model.Fats</dd>
+            <dt class="tw-px-2 tw-py-1">Fats</dt>
+            <dd class="tw-px-2 tw-pb-1">@Model.Fats</dd>
 
-        <dt>Image URL</dt>
-        <dd>@Model.ImageURL</dd>
-        
-        <form asp-action="ConfirmDelete" asp-route-id="@Model.FoodId" method="post">
-            <button type="submit" class="btn btn-danger btn-sm tw-rounded-lg">Delete</button>
-            <a asp-action="Table">Cancel</a>
-        </form>
+            <dt class="tw-px-2 tw-py-1">Image URL</dt>
+            <dd class="tw-px-2 tw-pb-3">@Model.ImageURL</dd>
+            
+            <form asp-action="ConfirmDelete" asp-route-id="@Model.FoodId" method="post">
+                <button type="submit" class="btn btn-danger tw-rounded-lg">Delete</button>
+                <a asp-action="Table">Cancel</a>
+            </form>
+        </div>
     </div>
 </div>

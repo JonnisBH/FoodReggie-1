@@ -1,44 +1,45 @@
 @model Food
-
-<div class="tw-p-14">
-    <h1 class="tw-font-bold tw-text-2xl">Create a New Food Item</h1>
-    <form asp-action="Create">
-        <div>
-            <label asp-for="Name"></label><span style="color: red;"></span>
-            <input asp-for="Name"/>
-            <span asp-validation-for="Name" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="FoodGroup"></label>
-            <input asp-for="FoodGroup"/>
-            <span asp-validation-for="FoodGroup" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="Calories"></label>
-            <input asp-for="Calories"/>
-            <span class="" asp-validation-for="Calories" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="Protein"></label>
-            <input asp-for="Protein"/>
-            <span asp-validation-for="Protein" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="Carbohydrates"></label>
-            <input asp-for="Carbohydrates"/>
-            <span asp-validation-for="Carbohydrates" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="Fats"></label>
-            <input asp-for="Fats"/>
-            <span asp-validation-for="Fats" style="color: red;"></span>
-        </div>
-        <div>
-            <label asp-for="ImageURL"></label>
-            <input asp-for="ImageURL"/>
-            <span asp-validation-for="ImageURL" style="color: red;"></span>
-        </div>
-    </form>
-    <button class="btn btn-primary tw-rounded-lg" type="submit">Create</button>
-    <a asp-action="Table">Cancel</a>
+<div class="tw-flex tw-items-center tw-justify-center tw-bg-gray-100 tw-mx-28 tw-my-20">
+    <div class="tw-bg-white tw-p-14 tw-rounded-lg tw-shadow-xl">
+        <h1 class="tw-font-bold tw-text-2xl tw-pb-4">Create a New Food Item</h1>
+        <form asp-action="Create">
+            <div class="tw-py-2">
+                <label asp-for="Name"></label><span style="color: red;"></span>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="Name"/>
+                <span asp-validation-for="Name" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2">
+                <label asp-for="FoodGroup"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="FoodGroup"/>
+                <span asp-validation-for="FoodGroup" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2">
+                <label asp-for="Calories"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="Calories"/>
+                <span asp-validation-for="Calories" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2">
+                <label asp-for="Protein"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="Protein"/>
+                <span asp-validation-for="Protein" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2">
+                <label asp-for="Carbohydrates"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="Carbohydrates"/>
+                <span asp-validation-for="Carbohydrates" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2">
+                <label asp-for="Fats"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="Fats"/>
+                <span asp-validation-for="Fats" style="color: red;"></span>
+            </div>
+            <div class="tw-py-2 tw-flex tw-flex-row">
+                <label asp-for="ImageURL"></label>
+                <input class="tw-border tw-rounded-lg tw-px-2 tw-py-1" asp-for="ImageURL"/>
+                <span asp-validation-for="ImageURL" style="color: red;"></span>
+            </div>
+            <button class="btn btn-primary tw-rounded-lg tw-px-4 tw-py-2" type="submit">Create</button>
+            <a asp-action="Table" class="tw-text-blue-500 tw-ml-4">Cancel</a>
+        </form>
+    </div>
 </div>

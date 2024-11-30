@@ -38,10 +38,8 @@
     </header>
     <div class="tw-container-none tw-h-full tw-w-full">
         <main role="main">
-            <div class="tw-outline-dashed tw-outline-1 tw-outline-offset-0 tw-outline-gray-300 tw-mx-28 tw-my-6 tw-shadow-xl tw-rounded-lg">
-                @RenderBody()
-                @RenderSection("Scripts", required: false)
-            </div>
+            @RenderBody()
+            @RenderSection("Scripts", required: false)
         </main>
     </div>
 </body>

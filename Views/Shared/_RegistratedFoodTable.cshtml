@@ -2,17 +2,21 @@
 
 <div>
     <table>
-        <tr>
-            <th>RegistrationId</th>
-            <th>FoodId</th>
-            <th>Name of Food</th>
-        </tr>
-        @foreach(var registratedFood in Model){
+        <thead>
             <tr>
-                <td>@registratedFood.RegistratedFoodId</td>
-                <td>@registratedFood.FoodId</td>
-                <td>@registratedFood.Food.Name</td>
+                <th class="tw-px-4">Registration Id</th>
+                <th class="tw-px-4">Food Id</th>
+                <th class="tw-px-4">Name of Food</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach(var registratedFood in Model){
+                <tr>
+                    <td class="tw-p-4">@registratedFood.RegistratedFoodId</td>
+                    <td class="tw-p-4">@registratedFood.FoodId</td>
+                    <td class="tw-p-4">@registratedFood.Food.Name</td>
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
