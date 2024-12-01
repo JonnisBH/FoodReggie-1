@@ -3,8 +3,6 @@ using FoodReggie_1.Models;
 using FoodReggie_1.DAL;
 using FoodReggie_1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.Json;
 using Microsoft.AspNetCore.Authorization;
 
 namespace FoodReggie_1.Controllers;
