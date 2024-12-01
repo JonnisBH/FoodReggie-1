@@ -17,7 +17,26 @@
                     <td class="tw-py-4">@registration.UserId</td>
                     <td class="tw-py-4">@registration.User.Name</td>
                 </tr>
-                <partial name="_RegistratedFoodTable" model="registration.RegistratedFoods"/>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="tw-px-4">Registration Id</th>
+                                <th class="tw-px-4">Food Id</th>
+                                <th class="tw-px-4">Name of Food</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var registratedFood in registration.RegistratedFoods){
+                                <tr>
+                                    <td class="tw-p-4">@registratedFood.RegistratedFoodId</td>
+                                    <td class="tw-p-4">@registratedFood.FoodId</td>
+                                    <td class="tw-p-4">@registratedFood.Food.Name</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             }    
         </table>
     </div>

@@ -5,5 +5,5 @@ public class Registration{
     public String RegistrationDate { get; set; } = string.Empty;
     public int UserId { get; set; }
     public virtual User User { get; set; } = default!;
-    public virtual List<RegistratedFood>? RegistratedFoods { get; set; }
+    public virtual List<RegistratedFood> RegistratedFoods { get; set; } = default!;
 }
