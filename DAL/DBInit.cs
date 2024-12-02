@@ -13,6 +13,7 @@ public static class DBInit{
         context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
 
+        //Initializing six different food items for the database
         if(!context.Foods.Any()){
             var foods = new List<Food>{
                 new Food{

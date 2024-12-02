@@ -6,6 +6,7 @@ namespace FoodReggie_1.ViewModels
         public IEnumerable<Food> Foods;
         public string? CurrentViewName;
 
+        //This contstructor initializes the viewmodel with the food items and the view name
         public FoodViewModel(IEnumerable<Food> foods, string? currentViewName){
             Foods = foods;
             CurrentViewName = currentViewName;
