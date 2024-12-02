@@ -13,6 +13,7 @@ public class FoodRepository : IFoodRepository{
         _logger = logger;
     }
 
+    //Retrieves all food items from the database.
     public async Task<IEnumerable<Food>?> GetAll(){
         try{
             return await _db.Foods.ToListAsync();
@@ -24,6 +25,7 @@ public class FoodRepository : IFoodRepository{
         
     }
 
+    //Retrieves a food item by its ID
     public async Task<Food?> GetFoodById(int id){
         try{
             return await _db.Foods.FindAsync(id);
@@ -34,6 +36,7 @@ public class FoodRepository : IFoodRepository{
         }
     }
 
+    //Creates a new food item in the database.
     public async Task<bool> Create(Food food){
         try{
             _db.Foods.Add(food);
@@ -47,6 +50,7 @@ public class FoodRepository : IFoodRepository{
         
     }
 
+    //Updates an already existing item in the database.
     public async Task<bool> Update(Food food){
         try{
             _db.Foods.Update(food);
@@ -60,6 +64,7 @@ public class FoodRepository : IFoodRepository{
         
     }
 
+    //Deletes a food item by its id.
     public async Task<bool> Delete(int id){
         try{
             var food = await _db.Foods.FindAsync(id);

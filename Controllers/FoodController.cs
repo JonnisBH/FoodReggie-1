@@ -15,6 +15,8 @@ public class FoodController : Controller{
         _foodRepository = foodRepository;
         _logger = logger;
     }
+
+    //Action method to display a list of food items in table view
     public async Task<IActionResult> Table(){
         var foods = await _foodRepository.GetAll();
         if(foods == null){
@@ -26,6 +28,7 @@ public class FoodController : Controller{
 
     }
 
+    //Action method to display a list of food grid in table view
     public async Task<IActionResult> Grid(){
         var foods = await _foodRepository.GetAll();
         if(foods == null){
@@ -36,6 +39,7 @@ public class FoodController : Controller{
         return View(foodViewModel);
     }
 
+    //Http get action
     [HttpGet]
     [Authorize]
     public IActionResult Create(){
@@ -44,7 +48,7 @@ public class FoodController : Controller{
 
     [HttpPost]
     [Authorize]
-    public async Task<IActionResult> Create(Food food){
+    public async Task<IActionResult> Create(Food food){ //Action method for creating a new food item
         if(ModelState.IsValid){
             bool returnOk = await _foodRepository.Create(food);
             if(returnOk){
