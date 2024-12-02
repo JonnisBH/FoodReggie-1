@@ -1,7 +1,8 @@
 @model IEnumerable<Registration>
 
+<h1 class="tw-font-bold tw-text-2xl">List of Registrations</h1>
+@foreach(var registration in Model){
 <div class="tw-p-14">
-    <h1 class="tw-font-bold tw-text-2xl">List of Registrations</h1>
     <div class="tw-flex tw-flex-row">
         <table class="tw-table-auto tw-border-collapse">
             <tr>
@@ -10,34 +11,14 @@
                 <th class="tw-px-4">User Id</th>
                 <th class="tw-px-4">Name of User</th>
             </tr>
-            @foreach(var registration in Model){
-                <tr>
-                    <td class="tw-py-4">Registration @registration.RegistrationId</td>
-                    <td class="tw-py-4">@registration.RegistrationDate</td>
-                    <td class="tw-py-4">@registration.UserId</td>
-                    <td class="tw-py-4">@registration.User.Name</td>
-                </tr>
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="tw-px-4">Registration Id</th>
-                                <th class="tw-px-4">Food Id</th>
-                                <th class="tw-px-4">Name of Food</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach(var registratedFood in registration.RegistratedFoods){
-                                <tr>
-                                    <td class="tw-p-4">@registratedFood.RegistratedFoodId</td>
-                                    <td class="tw-p-4">@registratedFood.FoodId</td>
-                                    <td class="tw-p-4">@registratedFood.Food.Name</td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }    
+            <tr>
+                <td class="tw-py-4">@registration.RegistrationId</td>
+                <td class="tw-py-4">@registration.RegistrationDate</td>
+                <td class="tw-py-4">@registration.User.UserId</td>
+                <td class="tw-py-4">@registration.User.Name</td>
+            </tr>
         </table>
     </div>
+    <partial name="_RegistratedFoodTable" model="registration.RegistratedFoods"/>
 </div>
+}

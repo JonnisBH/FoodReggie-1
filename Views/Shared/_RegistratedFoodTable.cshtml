@@ -1,15 +1,12 @@
 @model IEnumerable<RegistratedFood>
 
-<div>
-    <table>
-        <thead>
+    <div class="tw-flex tw-flex-row">
+    <table class="tw-table-auto tw-border-collapse">
             <tr>
                 <th class="tw-px-4">Registration Id</th>
                 <th class="tw-px-4">Food Id</th>
                 <th class="tw-px-4">Name of Food</th>
             </tr>
-        </thead>
-        <tbody>
             @foreach(var registratedFood in Model){
                 <tr>
                     <td class="tw-p-4">@registratedFood.RegistratedFoodId</td>
@@ -17,6 +14,5 @@
                     <td class="tw-p-4">@registratedFood.Food.Name</td>
                 </tr>
             }
-        </tbody>
     </table>
 </div>
