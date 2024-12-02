@@ -1,24 +1,25 @@
 @model IEnumerable<Registration>
-
-<h1 class="tw-font-bold tw-text-2xl">List of Registrations</h1>
-@foreach(var registration in Model){
-<div class="tw-p-14">
-    <div class="tw-flex tw-flex-row">
-        <table class="tw-table-auto tw-border-collapse">
-            <tr>
-                <th class="tw-px-4">Registration Id</th>
-                <th class="tw-px-4">Registration Date</th>
-                <th class="tw-px-4">User Id</th>
-                <th class="tw-px-4">Name of User</th>
-            </tr>
-            <tr>
-                <td class="tw-py-4">@registration.RegistrationId</td>
-                <td class="tw-py-4">@registration.RegistrationDate</td>
-                <td class="tw-py-4">@registration.User.UserId</td>
-                <td class="tw-py-4">@registration.User.Name</td>
-            </tr>
-        </table>
+<div class="tw-px-28 tw-py-6">
+    <h1 class="tw-font-bold tw-text-2xl tw-pt-14 tw-pb-4 tw-px-14">List of Registrations</h1>
+    <div class="tw-flex tw-flex-col tw-px-14">
+        @foreach(var registration in Model){
+            <div>
+                <table class="tw-table-auto tw-border-collapse">
+                    <tr>
+                        <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tl-lg">Registration Id</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white">Registration Date</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white">User Id</th>
+                        <th class="tw-p-4 tw-bg-black tw-text-white tw-rounded-tr-lg">Name of User</th>
+                    </tr>
+                    <tr class="tw-border-b tw-border-gray-300">
+                        <td class="tw-p-4">@registration.RegistrationId</td>
+                        <td class="tw-p-4">@registration.RegistrationDate</td>
+                        <td class="tw-p-4">@registration.User.UserId</td>
+                        <td class="tw-p-4">@registration.User.Name</td>
+                    </tr>
+                </table>
+            </div>
+            <partial name="_RegistratedFoodTable" model="registration.RegistratedFoods"/>
+        }
     </div>
-    <partial name="_RegistratedFoodTable" model="registration.RegistratedFoods"/>
 </div>
-}
